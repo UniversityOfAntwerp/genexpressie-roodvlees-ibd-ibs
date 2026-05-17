@@ -73,9 +73,6 @@ R8_3_DiseaseEffect$singular <- NULL
 #Voor het InteractionModel deze lijn ook runnen!
 #R8_3_InteractionEffect <- R8_3_InteractionEffect[!is.na(R8_3_InteractionEffect$Estimate), ]
 
-#volcano plots maken
-volcano(R8_3_DiseaseEffect)
-
 #Extra kolom met gennamen maken voor expressietabel
 map <- setNames(annot$GENE_SYMBOL, annot$ID)
 R8_3_DiseaseEffect$gene <- map[rownames(R8_3_DiseaseEffect)]
@@ -110,6 +107,9 @@ R8_3_DiseaseEffect <- R8_3_DiseaseEffect[!duplicated(R8_3_DiseaseEffect$ENSG_ID)
 
 #Vervang rownames door ENSG id's
 rownames(R8_3_DiseaseEffect) <- R8_3_DiseaseEffect$ENSG_ID
+
+#volcano plots maken
+volcano(R8_3_DiseaseEffect)
 
 #Functional enrichment m.b.v. Fisher's exact test uitvoeren 
 enrich.resR8_3_DiseaseEffect<- diffex.enrich(R8_3_DiseaseEffect, reactome)
