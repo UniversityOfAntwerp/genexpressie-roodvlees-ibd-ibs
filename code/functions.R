@@ -1,4 +1,5 @@
-# Functions for differential expression analysis
+# Functions for differential expression analysis:
+
 # Run differential expression tests for all genes
 diffex.test.all <- function(form, data, meta, var=NULL) {
   
@@ -61,8 +62,6 @@ diffex.test.all <- function(form, data, meta, var=NULL) {
   
   return(R)
 }
-
-
 # Create a volcano plot from differential expression results
 volcano <- function(diffex.res, q.thresh=0.05, fc.thresh=1, only_sig=T) {
   
@@ -108,8 +107,6 @@ volcano <- function(diffex.res, q.thresh=0.05, fc.thresh=1, only_sig=T) {
   lines(-c(fc.thresh, fc.thresh), ylim, col = "black")
   lines(c(fc.thresh, fc.thresh), ylim, col = "black")
 }
-
-
 # Test annotation-term enrichment among significant genes
 diffex.enrich <- function(diffex.res, annotations, direction="all") {
   
@@ -189,8 +186,6 @@ diffex.enrich <- function(diffex.res, annotations, direction="all") {
   
   R
 }
-
-
 # Run a GSEA-like enrichment test using ranked differential expression results
 diffex.gsea <- function(diffex.res, annotations, direction="all") {
   
