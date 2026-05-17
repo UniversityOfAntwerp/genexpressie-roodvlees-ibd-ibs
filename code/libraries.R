@@ -2,7 +2,6 @@
 required_packages <- c(
   "GEOquery",   # GEO data import
   "Biobase",    # ExpressionSet handling: exprs(), pData()
-  "limma",      # Gene expression analysis tools
   "lme4",       # Linear mixed models
   "lmerTest",   # p-values for lmer() models
   "ggplot2",    # Plots
