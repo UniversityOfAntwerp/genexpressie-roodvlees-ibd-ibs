@@ -4,11 +4,7 @@ required_packages <- c(
   "Biobase",    # ExpressionSet handling: exprs(), pData()
   "lme4",       # Linear mixed models
   "lmerTest",   # p-values for lmer() models
-  "ggplot2",    # Plots
-  "dplyr",      # Data manipulation
-  "tibble",     # Tibbles and rownames_to_column()
   "readr",      # Reading/writing files
-  "stringr"     # String handling
 )
 
 # Check if packages are installed
