@@ -1,7 +1,6 @@
 required_packages <- c(
   "GEOquery",   
-  "Biobase",    
-  "lme4",      
+  "Biobase",       
   "lmerTest",  
   "readr"      
 )
