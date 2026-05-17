@@ -14,9 +14,6 @@ diffex.test.all <- function(form, data, meta, var=NULL) {
   #'
   #' @return Data frame with model results and FDR-adjusted p-values.
   
-  require(MASS)
-  library(lmerTest)
-  
   updated.form <- update.formula(form, gene ~ .)
   meta.gene <- meta
   
