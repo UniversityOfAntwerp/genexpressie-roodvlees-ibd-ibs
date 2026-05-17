@@ -84,7 +84,7 @@ R8_3_DiseaseEffect$gene[is.na(R8_3_DiseaseEffect$gene)] <- rownames(R8_3_Disease
 #Beste probe per gen behouden (slechte duplicaten wegwerken)
 R8_3_DiseaseEffect <- R8_3_DiseaseEffect[order(R8_3_DiseaseEffect$qvalue), ]
 R8_3_DiseaseEffect <- R8_3_DiseaseEffect[!duplicated(R8_3_DiseaseEffect$gene), ]
-R8_3_DiseaseEffect = R8_3_DiseaseEffect[ (R8_3_DiseaseEffect$gene !=""),  ]
+R8_3_DiseaseEffect <- R8_3_DiseaseEffect[ (R8_3_DiseaseEffect$gene !=""),  ]
 
 #Row names veranderen door Gennamen
 rownames(R8_3_DiseaseEffect) <- R8_3_DiseaseEffect$gene
