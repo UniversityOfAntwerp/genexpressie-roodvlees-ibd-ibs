@@ -1,4 +1,5 @@
 if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager") 
 BiocManager::install("GEOquery") 
+install.packages("lmerTest")
 library(GEOquery) 
 library(lmerTest)
