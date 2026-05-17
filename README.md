@@ -11,7 +11,7 @@ We hebben deze dataset vooral gebruikt om te kijken of er met een mixed model du
 
 De vragen waar we vooral naar kijk zijn:
 
-- verschillen IBD- en IBS-samples in genexpressie?
+- verschillen IBD en IBS samples in genexpressie?
 - verandert genexpressie na de roodvleesinterventie?
 - is het effect van de interventie anders bij IBD dan bij IBS?
 
