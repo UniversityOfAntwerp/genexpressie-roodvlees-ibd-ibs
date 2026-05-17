@@ -1,9 +1,4 @@
-required_packages <- c(
-  "GEOquery",   
-  "Biobase",       
-  "lmerTest",  
-  "readr"      
-)
-
-invisible(lapply(required_packages, library, character.only = TRUE))
-
+if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager") 
+BiocManager::install("GEOquery") 
+library(GEOquery) 
+library(lmerTest)
