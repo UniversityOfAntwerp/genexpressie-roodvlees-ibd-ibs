@@ -25,6 +25,9 @@ meta <- meta[meta$description == "Participated in red meat intervention", ]
 values2 <- as.vector(expr[1001, ]) 
 hist(values2, breaks = 100, main = "Expression value distribution", xlab = "Log2 expression intensity") 
 
+#Lmertest diffex.test.all
+fit <- NULL
+
 #gemakkelijkere kolomnamen installeren
 colnames(meta) <- make.names(colnames(meta))
 
