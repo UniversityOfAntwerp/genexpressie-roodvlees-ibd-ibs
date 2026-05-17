@@ -7,10 +7,6 @@ expr <- exprs(gse[[1]])
 meta <- pData(gse[[1]]) 
 gpl <- getGEO(annotation(gse[[1]]))
 annot <- Table(gpl) 
-#rijnamen van expressietabel wat duidelijker maken 
-map1 <- setNames(annot$GENE_SYMBOL, annot$ID) 
-new_names1 <- map1[rownames(expr)] 
-rownames(expr) <- ifelse(is.na(new_names1), rownames(expr), new_names1) 
 #rijen met lege gennamen deleten 
 expr <- expr[rownames(expr) != "" & !is.na(rownames(expr)), ] 
 #kolomnamen van expressietabel vervangen met samplenamen
