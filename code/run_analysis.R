@@ -1,6 +1,6 @@
 source("code/libraries.R")
 source("code/functions.R")
-
+source("code/import_data.R")
 #matrices uit file halen
 gse <- getGEO("GSE25220", GSEMatrix = TRUE) 
 expr <- exprs(gse[[1]]) 
