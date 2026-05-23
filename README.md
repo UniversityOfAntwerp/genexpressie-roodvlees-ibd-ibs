@@ -19,20 +19,20 @@ De vragen waar we vooral naar kijken zijn:
 
 ```text
 .
-├── README.md
-├── code
-│   ├── functions.R
-│   ├── import_data.R
-│   ├── libraries.R
-│   └── run_analysis.R
-├── data
-│   ├── Ensembl2Reactome_All_Levels.human.txt
-│   ├── GSE25220_series_matrix.txt.gz
-│   └── gProfiler_hsapiens_2026-05-06_12-58-07.csv
-└── results
-    ├── R8_3_disease_fullmodel
-    ├── R8_3_interaction_fullmodel
-    └── R8_3_intervention_fullmodel
+├── README.md                                          #uitleg over het project
+├── code                                               #Rscripts voor de analyse
+│   ├── functions.R                                    #eigen functies
+│   ├── import_data.R                                  #data inladen
+│   ├── libraries.R                                    #packages inladen
+│   └── run_analysis.R                                 #analyse uitvoeren
+├── data                                               #gebruikte data
+│   ├── Ensembl2Reactome_All_Levels.human.txt          #genen koppelen aan pathways
+│   ├── GSE25220_series_matrix.txt.gz                  #genexpressie data
+│   └── gProfiler_hsapiens_2026-05-06_12-58-07.csv     #extra geninformatie
+└── results                                            #resultaten van de analyse
+    ├── R8_3_disease_fullmodel                         #verschil tussen ibd en ibs
+    ├── R8_3_interaction_fullmodel                     #interactie met de interventie
+    └── R8_3_intervention_fullmodel                    #effect van rood vlees
 ```
 
 ## Opbouw van de code
