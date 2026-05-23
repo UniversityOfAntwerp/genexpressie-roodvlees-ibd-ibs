@@ -7,9 +7,11 @@ reactome <- read.table(
   stringsAsFactors = FALSE
 )
 
-geneiddata <- read_csv(
+geneiddata <- read.table(
   "data/gProfiler_hsapiens_2026-05-06_12-58-07.csv",
-  show_col_types = FALSE
+  header = TRUE,
+  sep = ",",
+  stringsAsFactors = FALSE
 )
 
 colnames(reactome)[colnames(reactome) == "V1"] <- "gene"
