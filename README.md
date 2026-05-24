@@ -1,6 +1,6 @@
 # Roodvlees genexpressie analysise in IBD and IBS patiënten.
 
-Deze repository bevat een R-analyse van genexpressie in colonbiopten van personen met IBD en IBS. De samples zijn genomen voor en na een korte interventie met rood vlees. We gebruiken hiervoor de publieke GEO-dataset [GSE25220](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE25220).
+Deze repository bevat een R-analyse van genexpressie in darmbiopten van personen met IBD en IBS. De samples zijn genomen voor en na een korte interventie met rood vlees. We gebruiken hiervoor de publieke GEO-dataset [GSE25220](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE25220).
 
 De data komen uit de paper van Hebels et al. over rood vlees, fecal water genotoxicity en veranderingen in genexpressie in de menselijke colon:
 
