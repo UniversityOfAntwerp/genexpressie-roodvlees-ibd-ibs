@@ -58,7 +58,7 @@ De code opgesplitst in aparte bestanden omdat het anders snel onoverzichtelijk w
 - `functions.R`: bevat de functies voor de modellen, volcano plots, enrichment en GSEA.
 - `import_data.R`: leest de extra databestanden uit de map `data` in.
 - `run_analysis.R`: voert de analyse zelf uit.
-- `venn-diagram.R`: illustraties m.b.v. venn-diagrammen, evenals fischer's exact testen voor significantie overlappen
+- `venn-diagram.R`: illustratie functionaliteiten m.b.v. venn-diagram, evenals fischer's exact testen voor significantie overlappen
 
 De belangrijkste packages zijn `GEOquery`, `lmerTest`.
 
