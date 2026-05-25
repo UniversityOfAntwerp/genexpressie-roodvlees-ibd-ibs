@@ -105,7 +105,7 @@ A <- unique(c(
   ]
 ))
 
-universe <- unique(gsea.res.downR8_3_diseaseEFFECTonly_fullmodel$description)
+universe <- gsea.res.downR8_3_diseaseEFFECTonly_fullmodel$description
 
 a <- length(intersect(A, B))
 b <- length(setdiff(A, B))
