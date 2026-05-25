@@ -95,7 +95,7 @@ fisher.test(contingency)$p.value
 #fisher's exact test om te testen of metabolism-associated functions overgepresenteerd zijn
   #in de significant downregulated functionalities
 
-B <- metabolism_terms
+B <- metabolism_termen
 A <- unique(c(
   gsea.res.downR8_3_diseaseEFFECTonly_fullmodel$description[
     gsea.res.downR8_3_diseaseEFFECTonly_fullmodel$qvalue < 0.05
