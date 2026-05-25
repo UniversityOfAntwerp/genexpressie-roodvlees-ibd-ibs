@@ -75,7 +75,7 @@ plot(euler(fit),
   quantities = TRUE
 )
 
-#fisher's exact test voor similarities om te zien voor significante overlap tussen
+#fisher's exact test om te zien voor significante overlap tussen
 # downreguleerde functionaliteiten in disease vs intervention
 
 A_sig <-  paste(gsea.res.downR8_3_diseaseEFFECTonly_fullmodel$description[gsea.res.downR8_3_diseaseEFFECTonly_fullmodel$qvalue < 0.05])  # significante termen voor disease-effect (waarbij we de overlap willen testen)
