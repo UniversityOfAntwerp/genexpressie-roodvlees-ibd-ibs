@@ -59,17 +59,17 @@ Diffexdown_Intervention <- paste(gsea.res.downR8_3_InterventionEffect$descriptio
 Metabolism_Linked <- paste(metabolism_termen)
 
 
-# Colors
+# kleuren
 myCol <- brewer.pal(3, "Pastel2")
 
-# Venn-diagram 
+# de venn-diagram 
 fit <- list(
     "DF-Disease" = Diffexdown_Disease,
     "DF-Intervention" = Diffexdown_Intervention,
     "Metabolism-associated" = Metabolism_Linked
   )
 
-# Plot
+# plotten
 plot(euler(fit),
   fills = myCol,
   quantities = TRUE
