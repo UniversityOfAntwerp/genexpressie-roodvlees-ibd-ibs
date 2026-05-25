@@ -50,8 +50,6 @@ Dat script laadt eerst de andere bestanden in:
 source("code/libraries.R")
 source("code/functions.R")
 source("code/import_data.R")
-source("code/venn-diagram.R")
-
 ```
 
 De code opgesplitst in aparte bestanden omdat het anders snel onoverzichtelijk wordt. De algemene structuur is:
@@ -60,6 +58,7 @@ De code opgesplitst in aparte bestanden omdat het anders snel onoverzichtelijk w
 - `functions.R`: bevat de functies voor de modellen, volcano plots, enrichment en GSEA.
 - `import_data.R`: leest de extra databestanden uit de map `data` in.
 - `run_analysis.R`: voert de analyse zelf uit.
+- `venn-diagram.R`: illustraties m.b.v. venn-diagrammen, evenals fischer's exact testen voor significantie overlappen
 
 De belangrijkste packages zijn `GEOquery`, `lmerTest`.
 
