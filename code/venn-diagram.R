@@ -1,3 +1,4 @@
+#installeer als nog niet geinstalleerd!
 #install.packages("RColorBrewer")
 #install.packages("eulerr")
 
