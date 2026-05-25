@@ -2,11 +2,11 @@ source("code/libraries.R")
 source("code/functions.R")
 source("code/import_data.R")
 #matrices uit file halen
-gse <- getGEO("GSE25220", GSEMatrix = TRUE) 
-expr <- exprs(gse[[1]]) 
-meta <- pData(gse[[1]]) 
-gpl <- getGEO(annotation(gse[[1]]))
-annot <- Table(gpl) 
+gse <- getGEO("GSE25220") 
+gse <- gse[[1]]
+expr <- exprs(gse) 
+meta <- pData(gse) 
+annot <- fData(gse)
 #rijen met lege gennamen deleten 
 expr <- expr[rownames(expr) != "" & !is.na(rownames(expr)), ] 
 #kolomnamen van expressietabel vervangen met samplenamen
