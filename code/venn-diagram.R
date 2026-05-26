@@ -94,32 +94,3 @@ rownames(contingency) <- c("In A_sig", "Niet in A_sig")
 fisher.test(contingency)$p.value
 
 
-
-
-
-#fisher's exact test om te testen of metabolism-associated functions overgepresenteerd zijn
-  #in de significant downregulated functionalities
-
-B <- metabolism_termen
-A <- unique(c(
-  gsea.res.downR8_3_DiseaseEffect$description[
-    gsea.res.downR8_3_DiseaseEffect$qvalue < 0.05
-  ],
-  gsea.res.downR8_3_InterventionEffect$description[
-    gsea.res.downR8_3_InterventionEffect$qvalue < 0.05
-  ]
-))
-
-universe <- gsea.res.downR8_3_DiseaseEffect$description)  #totaal aantal termen na GSEA zijn evenveel en hetzelfde voor DiseaseEffect en InterventionEffect, dus arbitrair DiseaseEffect gekozen.
-
-a <- length(intersect(A, B))
-b <- length(setdiff(A, B))
-c <- length(setdiff(B, A))
-d <- length(setdiff(universe, union(A, B)))
-
-contingency <- matrix(c(a,b,c,d), nrow = 2)
-
-colnames(contingency) <- c("In B", "Niet in B")
-rownames(contingency) <- c("In A", "Niet in A")
-
-fisher.test(contingency)$p.value
